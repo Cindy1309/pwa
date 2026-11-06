@@ -1,0 +1,361 @@
+{% extends 'game/base2.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="text-center mb-5">
+
+    <p
+        style="
+        color:#7bd4ff;
+        letter-spacing:8px;
+        text-transform:uppercase;
+        font-size:.9rem;
+        font-weight:600;
+        ">
+
+        PERSONAJES
+
+    </p>
+
+    <h1
+        style="
+        font-size:clamp(3rem,7vw,6rem);
+        ">
+
+        LOS HABITANTES
+        DE PRIMAL ECHO
+
+    </h1>
+
+</section>
+
+<!-- PERSONAJES PRINCIPALES -->
+
+<h2 class="mb-4">
+    PERSONAJES PRINCIPALES
+</h2>
+
+<div class="row g-4">
+
+    <div class="col-lg-4">
+
+        <div class="character-card">
+
+            <div class="character-image">
+
+                <img
+                    src="{% static 'landingpage/img/KaelSinFondo.png' %}"
+                    class="img-fluid">
+
+            </div>
+
+            <div class="character-content">
+
+                <div class="character-number">
+                    01
+                </div>
+
+                <div class="character-role">
+                    EL EXPLORADOR
+                </div>
+
+                <h3 class="character-name">
+                    KAEL
+                </h3>
+
+                <p>
+                    Un joven explorador decidido a descubrir
+                    la verdad detrás de NÉMESIS.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-lg-4">
+
+        <div class="character-card">
+
+            <div class="character-image">
+
+                <img
+                    src="{% static 'landingpage/img/Nara.png' %}"
+                    class="img-fluid">
+
+            </div>
+
+            <div class="character-content">
+
+                <div class="character-number">
+                    02
+                </div>
+
+                <div class="character-role">
+                    LA INVENTORA
+                </div>
+
+                <h3 class="character-name">
+                    NARA
+                </h3>
+
+                <p>
+                    Especialista en tecnología ancestral
+                    y creadora de mejoras para el equipo.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-lg-4">
+
+        <div class="character-card">
+
+            <div class="character-image">
+
+                <img
+                    src="{% static 'landingpage/img/kiroSinFondo.png' %}"
+                    class="img-fluid">
+
+            </div>
+
+            <div class="character-content">
+
+                <div class="character-number">
+                    03
+                </div>
+
+                <div class="character-role">
+                    EL COMPAÑERO MECÁNICO
+                </div>
+
+                <h3 class="character-name">
+                    KIRO
+                </h3>
+
+                <p>
+                    Capaz de localizar recursos,
+                    estructuras ocultas y ayudar
+                    durante la exploración.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<br><br><br>
+
+<!-- ENEMIGOS -->
+
+<h2 class="mb-4">
+    ENEMIGOS
+</h2>
+
+<div class="row g-4">
+
+    <div class="col-lg-4">
+
+        <div class="character-card">
+
+            <div class="character-image">
+
+                <img
+                    src="{% static 'landingpage/img/brontosaurusSinFondo.png' %}"
+                    class="img-fluid">
+
+            </div>
+
+            <div class="character-content">
+
+                <div class="character-number">
+                    01
+                </div>
+
+                <div class="character-role">
+                    MÁQUINA TERRITORIAL
+                </div>
+
+                <h3 class="character-name">
+                    BRONTOSAURUS
+                </h3>
+
+                <p>
+                    Máquina feroz y territorial que defiende su territorio con ataques devastadores.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-lg-4">
+
+        <div class="character-card">
+
+            <div class="character-image">
+
+                <img
+                    src="{% static 'landingpage/img/espinosaurio.png' %}"
+                    class="img-fluid">
+
+            </div>
+
+            <div class="character-content">
+
+                <div class="character-number">
+                    02
+                </div>
+
+                <div class="character-role">
+                    MÁQUINA TERRITORIAL
+                </div>
+
+                <h3 class="character-name">
+                    ESPINOSAURIO
+                </h3>
+
+                <p>
+                    Una máquina de combate que utiliza su fuerza y velocidad para embestir a sus enemigos.
+                   
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-lg-4">
+
+        <div class="character-card">
+
+            <div class="character-image">
+
+                <img
+                    src="{% static 'landingpage/img/warTriceratopsSinFondo.jpeg' %}"
+                    class="img-fluid">
+
+            </div>
+
+            <div class="character-content">
+
+                <div class="character-number">
+                    03
+                </div>
+
+                <div class="character-role">
+                    ENEMIGO MECÁNICO
+                </div>
+
+                <h3 class="character-name">
+                    WARTRICERATOPS
+                </h3>
+
+                <p>
+                     Una máquina depredadora que acecha en los rincones listo para atacar.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<br><br><br>
+
+<!-- GRANDES AMENAZAS -->
+
+<h2 class="mb-4">
+    GRANDES AMENAZAS
+</h2>
+
+<div class="row g-4">
+
+    <div class="col-lg-6">
+
+        <div class="character-card">
+
+            <div class="character-image">
+
+                <img
+                    src="{% static 'landingpage/img/rexboosFase1.jpeg' %}"
+                    class="img-fluid">
+
+            </div>
+
+            <div class="character-content">
+
+                <div class="character-number">
+                    01
+                </div>
+
+                <div class="character-role">
+                    MÁQUINA COLOSAL
+                </div>
+
+                <h3 class="character-name">
+                    REX BOSS FASE 1
+                </h3>
+
+                <p>
+                    Una de las amenazas más peligrosas que aún permanecen activas.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-lg-6">
+
+        <div class="character-card">
+
+            <div class="character-image">
+
+                <img
+                    src="{% static 'landingpage/img/rexboosFase2.jpeg' %}"
+                    class="img-fluid">
+
+            </div>
+
+            <div class="character-content">
+
+                <div class="character-number">
+                    02
+                </div>
+
+                <div class="character-role">
+                    MÁQUINA COLOSAL
+                </div>
+
+                <h3 class="character-name">
+                    REX BOSS FASE 2
+                </h3>
+
+                <p>
+                    Una de las amenazas más peligrosas
+                    que aún permanecen activas.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

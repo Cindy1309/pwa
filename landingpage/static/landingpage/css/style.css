@@ -1,0 +1,533 @@
+/* ===== COLORES DEL JUEGO ===== */
+
+:root{
+    --primal-blue:#00d9ff;
+    --primal-orange:#ff8c00;
+    --primal-dark:#07111f;
+    --primal-dark2:#0f172a;
+    --primal-green:#70ffba;
+}
+
+/* ===== GENERAL ===== */
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Rajdhani', sans-serif;
+    background:
+        linear-gradient(
+            to bottom,
+            #07111f,
+            #0f172a
+        );
+    color:white;
+}
+
+/* ===== NAVBAR ===== */
+
+
+
+.navbar-brand{
+    font-family:'Orbitron', sans-serif;
+    font-size:2rem;
+    font-weight:900;
+    color:var(--primal-blue)!important;
+}
+
+.nav-link{
+    color:white!important;
+    font-size:1.15rem;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:var(--primal-orange)!important;
+}
+
+/* ===== HERO ===== */
+
+.hero{
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.65),
+        rgba(0,0,0,.75)
+    ),
+    url("../img/fondo1.png");
+
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.hero h1{
+    font-family:'Orbitron', sans-serif;
+
+    font-size:7rem;
+    font-weight:900;
+
+    color:#fff;
+
+    text-shadow:
+        0 0 10px #00d9ff,
+        0 0 20px #00d9ff,
+        0 0 40px #00d9ff;
+}
+
+.lead{
+    color:var(--primal-orange);
+    font-size:2rem;
+    font-weight:bold;
+}
+
+/* ===== BOTONES ===== */
+
+.btn-success{
+    background:linear-gradient(
+        45deg,
+        #ff8c00,
+        #ffb347
+    );
+
+    color:black;
+    border:none;
+
+    font-weight:bold;
+
+    padding:15px 40px;
+}
+
+.btn-success:hover{
+    transform:translateY(-3px);
+}
+
+/* ===== TITULOS ===== */
+
+h1,
+h2,
+h3,
+h4{
+
+    font-family:'Orbitron',sans-serif;
+
+            color:var(--primal-blue);
+
+            text-shadow:
+                0 0 15px rgba(0,217,255,.5);
+        }
+
+/* ===== SECCIONES ===== */
+
+section{
+    padding:120px 0;
+}
+
+/* ===== TARJETAS ===== */
+
+.card{
+
+    background:#162234;
+
+    color:white;
+
+    border:1px solid rgba(0,217,255,.2);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+    box-shadow:
+        0 0 15px rgba(0,217,255,.15);
+}
+
+.card:hover{
+
+    transform:
+        translateY(-10px);
+        
+
+    box-shadow:
+        0 0 25px rgba(0,217,255,.5);
+}
+
+.card h4{
+    color:var(--primal-orange);
+}
+
+/* ===== FORMULARIO ===== */
+
+#unete{
+    background:
+    linear-gradient(
+        135deg,
+        #08111f,
+        #14243b
+    );
+}
+
+.form-control{
+    height:55px;
+    border:none;
+}
+
+#unete button{
+    background:#00d9ff;
+    border:none;
+    color:black;
+    font-weight:bold;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+    background:black;
+    border-top:2px solid #00d9ff;
+}
+.personajes-section{
+
+    padding:120px 0;
+
+    position:relative;
+}
+
+/* brillo de fondo */
+
+.personajes-section::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(0,217,255,.08),
+            transparent 70%
+        );
+
+    pointer-events:none;
+}
+
+/* tarjeta principal */
+
+.personaje-card{
+
+    background:
+        linear-gradient(
+            180deg,
+            #223d5f 0%,
+            #17283d 50%,
+            #0f1c2c 100%
+        );
+
+    color:white;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    position:relative;
+
+    border:2px solid rgba(0,217,255,.45);
+
+    height:100%;
+
+    transition:all .4s ease;
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.45),
+        0 0 10px rgba(0,217,255,.25),
+        inset 0 0 15px rgba(0,217,255,.05);
+}
+/* linea luminosa superior */
+
+
+
+/* relieve */
+
+.personaje-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.08),
+            transparent 20%
+        );
+
+    pointer-events:none;
+}
+
+.personaje-card:hover{
+
+    transform:
+        translateY(-10px);
+
+    border-color:#00d9ff;
+
+    box-shadow:
+        0 25px 50px rgba(0,0,0,.55),
+        0 0 15px rgba(0,217,255,.75),
+        0 0 35px rgba(0,217,255,.45),
+        inset 0 0 25px rgba(0,217,255,.08);
+}
+
+/* imagen */
+
+.personaje-img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+    border-bottom:
+        2px solid rgba(0,217,255,.15);
+
+    transition:.5s;
+}
+
+.personaje-card:hover .personaje-img{
+
+    transform:scale(1.05);
+}
+
+/* nombre */
+
+.personaje-card h4{
+
+    color:#ff9c1a;
+
+    font-size:2rem;
+
+    text-align:center;
+
+    margin-top:20px;
+
+    font-family:'Orbitron', sans-serif;
+
+    text-shadow:
+        0 0 10px rgba(255,156,26,.6);
+}
+
+/* texto */
+
+.personaje-card p{
+
+    text-align:center;
+
+    color:#d7e7ff;
+
+    font-size:1rem;
+
+    line-height:1.7;
+
+    padding:0 20px 25px 20px;
+}
+
+/* indicadores */
+
+.carousel-indicators button{
+
+    background:#00d9ff !important;
+
+    width:12px !important;
+
+    height:12px !important;
+
+    border-radius:50%;
+}
+
+/* flechas */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+
+    background-color:rgba(0,217,255,.3);
+
+    border-radius:50%;
+
+    padding:30px;
+
+    transition:.3s;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover{
+
+    background-color:rgba(0,217,255,.7);
+}
+
+/* responsive */
+
+@media(max-width:768px){
+
+    .personaje-img{
+
+        height:260px;
+    }
+
+    .personaje-card h4{
+
+        font-size:1.6rem;
+    }
+
+}
+.registro-panel{
+
+    max-width:800px;
+
+    margin:auto;
+
+    padding:60px;
+
+    border-radius:30px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(25,40,60,.95),
+            rgba(10,20,35,.95)
+        );
+
+    border:2px solid rgba(0,217,255,.3);
+
+    box-shadow:
+        0 0 30px rgba(0,217,255,.2),
+        0 0 80px rgba(0,217,255,.05);
+
+    text-align:center;
+}
+
+.registro-texto{
+
+    font-size:1.2rem;
+
+    color:#d7e7ff;
+
+    max-width:600px;
+
+    margin:25px auto 35px auto;
+}
+
+.registro-btn{
+
+    background:
+        linear-gradient(
+            45deg,
+            #ff8c00,
+            #ffba52
+        );
+
+    color:black;
+
+    font-weight:bold;
+
+    font-size:1.2rem;
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    transition:.3s;
+}
+
+.registro-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 0 20px rgba(255,140,0,.6);
+}
+
+.form-control{
+
+    background:#0b1522;
+
+    border:1px solid rgba(0,217,255,.25);
+
+    color:white;
+
+    height:60px;
+
+    border-radius:15px;
+}
+
+.form-control:focus{
+
+    background:#101d2d;
+
+    color:white;
+
+    border-color:#00d9ff;
+
+    box-shadow:
+        0 0 15px rgba(0,217,255,.4);
+}
+
+.form-control::placeholder{
+
+    color:#a8bfd8;
+}
+/* ==================================== */
+/* PANELES FUTURISTAS */
+/* ==================================== */
+
+.panel{
+
+    background:
+    linear-gradient(
+        rgba(25,35,55,.95),
+        rgba(15,25,40,.95)
+    );
+
+    border:
+    1px solid rgba(0,217,255,.2);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    box-shadow:
+        0 0 25px rgba(0,217,255,.08);
+
+    color:white;
+}
+.panel p,
+.panel li{
+
+    color:#d7e7ff;
+
+    font-size:1.1rem;
+
+    line-height:1.8;
+}
+video{
+
+    border-radius:20px;
+
+    border:
+        2px solid rgba(0,217,255,.3);
+
+    box-shadow:
+        0 0 20px rgba(0,217,255,.2);
+}

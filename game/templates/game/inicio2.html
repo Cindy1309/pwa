@@ -1,0 +1,187 @@
+{% extends 'game/base2.html' %}
+{% load static %}
+{% block content %}
+
+<section class="text-center">
+
+    <p
+        style="
+        color:#7bd4ff;
+        letter-spacing:8px;
+        text-transform:uppercase;
+        font-size:.9rem;
+        font-weight:600;
+        ">
+
+        UN MUNDO QUE RECUERDA
+
+    </p>
+
+    <h1
+        style="
+        font-size:clamp(3rem,8vw,6rem);
+        margin-bottom:30px;
+        text-transform:uppercase;
+        ">
+
+        ADÉNTRATE EN<br>
+        LO SALVAJE
+
+    </h1>
+
+    <p
+        style="
+        max-width:900px;
+        margin:auto;
+        line-height:2;
+        font-size:1.35rem;
+        color:#c7d0db;
+        ">
+
+        Bajo las ruinas de una civilización olvidada,
+        la naturaleza y las máquinas han forjado
+        un nuevo orden.
+
+    </p>
+
+</section>
+
+<br><br><br>
+
+<section>
+
+    <img
+        src="{% static 'landingpage/img/primalecho.png' %}"
+        class="img-fluid rounded"
+        style="
+        width:60%;
+        max-width:800px;
+        margin:auto;
+        display:block;
+        border:1px solid rgba(123,212,255,.2);
+        ">
+
+</section>
+
+<br><br><br><br>
+
+<section>
+
+    <p
+        style="
+        color:#7bd4ff;
+        letter-spacing:8px;
+        text-transform:uppercase;
+        font-size:.9rem;
+        font-weight:600;
+        ">
+
+        01 — EXPLORACIÓN PROFUNDA
+
+    </p>
+
+    <h2
+        style="
+        font-size:clamp(2rem,5vw,4rem);
+        max-width:900px;
+        line-height:1.3;
+        ">
+
+        DESAFÍA LAS PROFUNDIDADES
+        DE UN REINO OLVIDADO
+
+    </h2>
+
+    <br>
+
+    <p
+        style="
+        max-width:900px;
+        line-height:2;
+        font-size:1.15rem;
+        color:#c7d0db;
+        ">
+
+        Recorre ciudades cubiertas por la vegetación,
+        estructuras tecnológicas abandonadas y regiones
+        donde cada ruina conserva fragmentos de una
+        historia perdida.
+
+    </p>
+
+</section>
+
+<br><br><br><br>
+
+<section>
+
+    <p
+        style="
+        color:#7bd4ff;
+        letter-spacing:8px;
+        text-transform:uppercase;
+        font-size:.9rem;
+        font-weight:600;
+        ">
+
+        02 — SUPERVIVENCIA
+
+    </p>
+
+    <h2
+        style="
+        font-size:clamp(2rem,5vw,4rem);
+        max-width:900px;
+        line-height:1.3;
+        ">
+
+        SOBREVIVE ENTRE
+        MÁQUINAS Y NATURALEZA
+
+    </h2>
+
+    <br>
+
+    <p
+        style="
+        max-width:900px;
+        line-height:2;
+        font-size:1.15rem;
+        color:#c7d0db;
+        ">
+
+        Descubre recursos ocultos, mejora tu equipo,
+        enfrenta enemigos mecánicos y desentraña los
+        secretos que dejó NÉMESIS tras el colapso.
+
+    </p>
+
+</section>
+
+<br><br><br><br>
+
+<section class="text-center">
+
+    <div
+        style="
+        border:1px solid rgba(123,212,255,.3);
+        padding:40px;
+        ">
+
+        <h2>
+
+            Bienvenido {{ usuario }}
+
+        </h2>
+
+        <p>
+
+            Tu aventura apenas comienza.
+
+        </p>
+
+    </div>
+
+</section>
+
+{% endblock %}
